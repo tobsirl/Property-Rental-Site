@@ -6,8 +6,8 @@ Primary light: #FF3366
 Primary dark: #BA265D
 
 Twitch: #6441a5;
-Twitch-Light: #8c66ff;
-Twitch-Dark: #460df2
+Twitch-Light: #815fc0;
+Twitch-Dark: #503484;
 
 Grey light 1: #faf9f9
 Grey light 2: #f4f2f2
@@ -19,9 +19,38 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+:root {
+  --color-twitch: #6441a5;
+  --color-twitch-light: #815fc0;
+  --color-twitch-dark: #503484;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-4: #ccc;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-white: #fff; }
+
 * {
   margin: 0;
   padding: 0; }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
 body {
-  background-color: #460df2; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+  background-image: linear-gradient(to right bottom, var(--color-twitch-light), var(--color-twitch-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
