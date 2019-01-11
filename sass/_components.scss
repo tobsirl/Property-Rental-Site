@@ -220,16 +220,37 @@
   }
 
   &__location {
-    
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
   }
 
   &__rating {
+    background-color: var(--color-twitch);
+    color: var(--color-white);
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
   }
 
   &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
   }
 
   &__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
   }
 }
 
@@ -257,19 +278,17 @@
 
 @keyframes pulsate {
   0% {
-      transform: scale(1);
-      box-shadow: none;
+    transform: scale(1);
+    box-shadow: none;
   }
 
   50% {
-      transform: scale(1.05);
-      box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
   }
 
   100% {
-      transform: scale(1);
-      box-shadow: none;
+    transform: scale(1);
+    box-shadow: none;
   }
 }
-
-
